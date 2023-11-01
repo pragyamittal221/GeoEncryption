@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pragyamittal221/GeoEncryption.git"
+  },
+  "author": "\"Pragya Mittal <pragyamittal221@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pragyamittal221/GeoEncryption/issues"
+  },
+  "homepage": "https://github.com/pragyamittal221/GeoEncryption#readme"
+}
