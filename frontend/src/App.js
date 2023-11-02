@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
+import FileUpload from './components/FileUpload/FileUpload';
+import EmailInput from './components/EmailInput/EmailInput';
+import KeyInput from './components/KeyInput/KeyInput';
+import LocationInput from './components/LocationInput/LocationInput';
+import SubmitButton from './components/SubmitButton/SubmitButton';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="input-field">
+        <FileUpload />
+      </div>
+      <div className="input-field">
+        <EmailInput />
+      </div>
+      <div className="input-field">
+        <KeyInput />
+      </div>
+      <div className="input-field">
+        <LocationInput />
+      </div>
+      <div className="input-field">
+        <SubmitButton />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
