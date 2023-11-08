@@ -1,7 +1,7 @@
 // FileUpload.js
 
 import React, { useState } from 'react';
-// import './FileUpload.css';
+import './FileUpload.css';
 
 const FileUpload = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -12,7 +12,8 @@ const FileUpload = () => {
 
   return (
     <div className="FileUpload">
-      <input type="file" onChange={fileSelectedHandler} />
+      <input type="file" id="file" onChange={fileSelectedHandler} style={{display: 'none'}} />
+      <label htmlFor="file" className="button">Choose File to be Encrypted</label>
     </div>
   );
 };

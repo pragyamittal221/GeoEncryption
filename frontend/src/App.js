@@ -1,29 +1,20 @@
 import React from 'react';
-import FileUpload from './components/FileUpload/FileUpload';
-import EmailInput from './components/EmailInput/EmailInput';
-import KeyInput from './components/KeyInput/KeyInput';
-import LocationInput from './components/LocationInput/LocationInput';
-import SubmitButton from './components/SubmitButton/SubmitButton';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Default from './pages/Default/Default';
+import Encrypt from "./pages/Encrypt/Encrypt";
+import Decrypt from "./pages/Decrypt/Decrypt";
 import './App.css';
 
 const App = () => {
   return (
     <div className="App">
-      <div className="input-field">
-        <FileUpload />
-      </div>
-      <div className="input-field">
-        <EmailInput />
-      </div>
-      <div className="input-field">
-        <KeyInput />
-      </div>
-      <div className="input-field">
-        <LocationInput />
-      </div>
-      <div className="input-field">
-        <SubmitButton />
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Default />} />
+          <Route path="/encrypt" element={<Encrypt />} />
+          <Route path="/decrypt" element={<Decrypt />} />
+        </Routes>
+      </Router>
     </div>
   );
 };

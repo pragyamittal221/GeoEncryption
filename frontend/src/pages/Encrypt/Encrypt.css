@@ -1,0 +1,27 @@
+/* encrypt.css */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+
+.input-field {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    width: 300px;
+  }
+
+  input[type="text"], input[type="email"], input[type="file"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .otherButton {
+    display: flex;
+    justify-content: center;
+  }
+  
