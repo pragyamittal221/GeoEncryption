@@ -2,7 +2,7 @@ import React from 'react';
 import FileUpload from './../../components/FileUpload/FileUpload';
 import EmailInput from './../../components/EmailInput/EmailInput';
 import KeyInput from './../../components/KeyInput/KeyInput';
-import LocationInput from './../../components/LocationInput/LocationInput';
+import LocationInput from './../../components/HandleLocation/LocationInput';
 import SubmitButton from './../../components/SubmitButton/SubmitButton';
 import './Encrypt.css';
 

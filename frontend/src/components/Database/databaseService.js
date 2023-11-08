@@ -18,3 +18,8 @@ exports.getFile = async (email) => {
   const file = await File.findOne({ email });
   return file;
 };
+
+exports.getLocation = async (_id) => {
+  const file = await File.findById(_id);
+  return file ? file.location : null;
+};
