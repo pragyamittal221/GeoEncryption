@@ -10,7 +10,7 @@ const SubmitButton = ({ email, file, key, location }) => {
       alert('An error occurred while sending the email.');
     }
   };
-
+//Need to call saveFile function from databaseServices.js
   return (
     <button onClick={handleSubmit}>Submit</button>
   );
